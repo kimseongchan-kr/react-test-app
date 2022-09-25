@@ -16,8 +16,10 @@
     "build": "react-scripts build",
     "pretest": "npm run lint",
     "test": "react-scripts test",
+    "posttest": "npm run format",
     "eject": "react-scripts eject",
-    "lint": "eslint . --cache --fix"
+    "lint": "eslint . --cache --fix",
+    "format": "prettier --loglevel warn --write \"**/*.{js,css,md}\""
   },
   "browserslist": {
     "production": [
@@ -34,6 +36,7 @@
   "devDependencies": {
     "eslint": "^8.24.0",
     "eslint-plugin-jest-dom": "^4.0.2",
-    "eslint-plugin-testing-library": "^5.7.0"
+    "eslint-plugin-testing-library": "^5.7.0",
+    "prettier": "^2.7.1"
   }
 }
